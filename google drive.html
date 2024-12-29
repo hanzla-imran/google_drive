@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+   <style>
+            body {
+                margin:0px;
+                padding:0px; 
+                background-color:#f8fafd; 
+                overflow: hidden;
+            }
+            .main {
+                width: 100%; 
+                font-family: Roboto, Arial, sans-serif;  
+            }
+            .nav-bar {
+                width: 100%; 
+                display: inline-flex; 
+            }
+            .logo {
+                width: 24%;
+                display: flex;
+            }
+            .logo img {
+                padding-left: 26px;
+                padding-top: 12.5px;
+                height: 36px;
+            }
+            .pl-10 {
+                padding-left: 10px;
+                font-size: 22px;
+                margin-top: 20px;
+            }
+            .vis-visible {
+                visibility: visible;
+                width: 50%;
+            }
+       @media only screen and (max-width: 600px) {
+             /* For tablets: */
+               .vis-visible {
+                         visibility: hidden;
+                    }  
+          }
+            .input-search {
+                width: 100%; 
+            }
+        @media only screen and (max-width: 428px) {
+             /* For tablets: */
+            .vis-visible {
+                         width: 48%;
+                    }
+             }
+            .bx-w {
+                border: none;
+                background-color: #e9eef6;
+                border-radius:30px;
+                display:flex;
+                align-items:center;
+                padding: 20px;
+                height: 4px;
+                margin-top: 8px;
+            }
+            .bx-w:active {
+                background-color:white;
+                border:none;
+                box-shadow: 0px 0px 2.5px 0.5px grey;
+            }
+            .bx-w input {
+                flex:1px;
+                height:40px;
+                background-color: #e9eef6;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                padding: 16px;
+            }
+            .bx-w input:active {
+               background-color:white;
+            }
+            .bx-w img {
+                width: 3.5%;
+            }
+            .end-bar {
+                width: 20.5%;
+            }
+        
+            .icon-3 {
+                height: 54px;
+                display: flex;
+                align-items: center;
+                gap: 22px;
+                justify-content: right;
+                padding-top: 5px;
+            }
+            .icon-3 img {
+                height: 17px;
+            }
+            .as-w {
+                width: 100%;
+                display: flex;
+            }
+       @media only screen and (max-width: 428px) {
+             /* For tablets: */
+                   ::-webkit-scrollbar {
+                                        display: none;
+                                     } 
+             }
+      
+            ::-webkit-scrollbar {
+                width: 8px;
+                height: 10px;
+            }
+
+
+            ::-webkit-scrollbar-track { 
+                border-radius: 10px;
+            }
+ 
+
+           ::-webkit-scrollbar-thumb {
+                background: #c7c7c7; 
+                border-radius: 10px;
+            }
+
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #7e817f; 
+            }    
+            .side-bar {
+                width:32%;
+                height: 422px;
+                display: inline-grid; 
+                visibility: visible; 
+            }
+       @media only screen and (max-width: 498px) {
+             /* For tablets: */
+                 .side-bar {
+                            visibility: hidden;
+                          }
+                }
+           
+            .btn {
+                height: 86px;
+                
+                width: 100%;
+            }
+            .btn button {
+                margin-left: 23px;
+                border: none;
+                background-color: white;
+                width: 33%;
+                margin-top: 27px;
+                height: 44px;
+                border-radius: 11px;
+                box-shadow: 0px 2px 3px 1px #c0c1c3;
+            }
+            .sd-3 {
+                overflow: auto;
+                height: 340px;
+            }
+        @media only screen and (max-width: 378px) {
+             /* For mobile phone: */
+                .sd-3 {
+                       width: 62%;
+                     }
+              }
+            .sd-3 ul{
+                margin: 0px;
+                padding: 0px;
+            }
+            .sd-3 li {
+                list-style-type:none;
+                margin-left: 16px;
+                padding: 4px;
+            }
+     @media only screen and (max-width: 600px) {
+             /* For tablets: */
+                  .sd-3 li {
+                          margin-left: 0px;
+                         }
+                  }
+            .sd-3 li:hover {
+                background-color: #ebeee9;
+                border-radius: 20px;
+                width: 85%;
+            }
+            .br-20 {
+                border: none;
+                border-radius: 20px;
+                background-color: #c2e7fe;
+                width: 85%;
+            }
+            .sd-3 li a{
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                margin-left: 12px;
+            }
+            .sd-3 li a img {
+                width:9%;
+            }
+            .sd-3 li progress {
+                height: 10px;
+                width: 90%;
+            }
+            .sd-3 li button {
+                height: 44px;
+                background-color: #f8fafd;
+                border: 1px solid black;
+                border-radius: 21px;
+                width: 73%;
+                color: #4a7cdc;
+                font-family: Roboto, Arial, sans-serif;
+                font-weight: 500;
+            }
+            .sd-3 span {
+                margin-left: 14px;
+                
+            }
+            .w-76 {
+                width: 99.5%;
+                background-color: white;
+                border-radius:18px;
+                margin-top: 0px;
+                box-shadow:1px 0px 1px -1px lightgrey;
+                height: 405px;
+                overflow: auto;
+                margin-right: -21px;
+                overflow-x: hidden;
+            }
+     @media only screen and (max-width: 600px) {
+             /* For tablets: */
+                  .w-76 {
+                         width: 100%;
+                         margin-top: -274px;
+                         margin-left: -17px;
+                       }
+                   side-bar {
+                         width: 30%;
+                        }
+              }
+          /*  .p-f {
+                margin-left:18px;
+            }  */
+            .fs-24 {
+                font-size:24px; 
+                margin-left: 21px;  
+            }
+          @media only screen and (max-width: 496px) {
+             /* For tablets: */
+                   .fs-24 {
+                            margin-left: 15px;
+                          }
+               }
+            .df-5 {
+                width: 100%;
+                display: flex;
+                margin-top: -9px;
+            }
+            .sw-20 {
+                width: 14%;
+               
+                display: block;
+                margin-left: 22px;
+            }
+          @media only screen and (max-width: 600px) {
+             /* For tablets: */
+                    .sw-20 {
+                            display: none;
+                          }
+                 }
+            .btn-2 {
+                width: 56%;
+            }
+       
+     
+            .btn-2 button {
+                background-color: #c2e7fe;
+                border: 1px solid grey;
+                padding: 5px;
+                border-radius: 31px 0px 0px 31px;
+                width: 99px;
+                margin-top: 9px;
+                height: 32px;
+                
+            }
+          
+       @media only screen and (max-width: 496px) {
+             /* For tablets: */
+                .btn-2 {
+                        display: none;
+                        }
+              .btn-2 button  {
+                        width: 80px; 
+                        
+                       }
+              .btn-2 a button {
+                        padding-top: 5px;
+                      }
+               }
+       @media only screen and (max-width: 398px) {
+             /* For tablets: */
+              .btn-2 button  {
+                        width: 70px; 
+                        
+                       }
+               }
+            .btn-w-30 {
+               width: 30%;
+               text-align: end;
+            }
+           @media only screen and (max-width: 431px) {
+             /* For tablets: */
+                .btn-w-30 {
+                          display: none;
+                       }    
+                 }
+     @media only screen and (max-width: 496px) {
+             /* For tablets: */
+                .btn-w-30 {
+                          width: 21px;
+                        }
+             }
+            .D-flex {
+                display: flex;
+                width: 100%;
+            }
+            .w-57 {
+                width:57%;
+                display: inline-flex;
+                margin-left: 22px;
+                font-size: 14px;
+            }
+        @media only screen and (max-width: 496px) {
+             /* For tablets: */
+                 .w-57 {
+                        margin-left: 20px;
+                        margin-top: 13px;
+                       }
+               }
+            .w-40 {
+                width:40%;
+                font-size: 14px;
+            }
+          @media only screen and (max-width: 496px) {
+             /* For tablets: */
+                   .w-40 {
+                          width: 76%;
+                          margin-top: 13px;
+                        }
+                }
+            .b-1 {
+                border-bottom: 1px solid #d5d5d5;
+                width: 745px;
+                margin-left: 21px;
+                margin-top: -3px;
+            }
+         @media only screen and (max-width: 496px) {
+             /* For tablets: */
+                    .b-1 {
+                         width: 257px;
+                         margin-left: 14px;
+                         margin-top: -2px;
+                       }
+                }
+            .DF-10 {
+                display: flex;
+                width: 100%;
+            }
+            .img-w {
+                width: 6%;
+                display: inline-flex;
+            }
+            .img-w img {
+                width: 39%;
+                height: 23px;
+                margin-left: 14px;
+                margin-top: 13px;
+            }
+            .w-50 {
+                width: 53%;
+                 font-size: 14px;
+            }
+            .w-50 img {
+                width:3%;
+                margin-left: 5px;
+            }
+            .nw-30 {
+                width: 33%;
+                font-size: 14px;
+                color: grey;
+            }
+            .n-img {
+                width: 7%;
+            }
+            .n-img img {
+                width: 24%;
+                margin-top: 15px;
+            }
+            .b-2 {
+                border-bottom: 1px solid #d5d5d5;
+                width: 97%;
+            }
+             .lt-2 {
+                display: flex;
+                width: 100%;
+            }
+            .l-2 {
+                width: 6%;
+                display: inline-flex;
+            }
+            .l-2 img {
+                width: 39%;
+                height: 23px;
+                margin-left: 14px;
+                margin-top: 13px;
+            }
+            .p-2 {
+                width: 53%;
+            }
+            .p-2 p {
+                font-size: 14px;
+            }
+            .p-2 img {
+                width:3%;
+                margin-left: 5px;
+            }
+           .n-o {
+                width: 33%;
+                font-size: 14px;
+                color: grey;
+            }
+            .n-i {
+                width: 7%;
+            }
+            .n-i img {
+                width: 24%;
+                margin-top: 15px;
+            }
+            .b-3 {
+                border-bottom: 1px solid #d5d5d5;
+                 width: 97%;
+            }
+             .lt-3 {
+                display: flex;
+                width: 100%;
+            }
+            .l-3 {
+                width: 6%;
+                display: inline-flex;
+            }
+            .l-3 img {
+                width: 39%;
+                height: 23px;
+                margin-left: 14px;
+                margin-top: 13px;
+            }
+            .p-3 {
+                width: 53%;
+            }
+            .p-3 p {
+                font-size: 14px;
+            }
+            .p-3 img {
+                width:3%;
+                margin-left: 5px;
+            }
+           .n-o 2{
+                width: 33%;
+                font-size: 14px;
+                color: grey;
+            }
+            .n-i 2{
+                width: 7%;
+            }
+            .n-i 2 img {
+                width: 24%;
+                margin-top: 15px;
+            }
+             .lt-4 {
+                display: flex;
+                width: 100%;
+            }
+            .l-4 {
+                width: 6%;
+                display: inline-flex;
+            }
+            .l-4 img {
+                width: 39%;
+                height: 23px;
+                margin-left: 14px;
+                margin-top: 13px;
+            }
+            .p-4 {
+                width: 53%;
+            }
+            .p-4 p {
+                font-size: 14px;
+            }
+            .p-4 img {
+                width:3%;
+                margin-left: 5px;
+            }
+           .n-o 3{
+                width: 33%;
+                font-size: 14px;
+                color: grey;
+            }
+            .n-i 3{
+                width: 7%;
+            }
+            .n-i 3 img {
+                width: 24%;
+                margin-top: 15px;
+            }
+            .b-4 {
+                border-bottom: 1px solid #d5d5d5;
+                 width: 97%;
+            }
+             .lt-5 {
+                display: flex;
+                width: 100%;
+            }
+            .l-5 {
+                width: 6%;
+                display: inline-flex;
+            }
+            .l-5 img {
+                width: 39%;
+                height: 23px;
+                margin-left: 14px;
+                margin-top: 13px;
+            }
+            .p-5 {
+                width: 53%;
+            }
+            .p-5 p {
+                font-size: 14px;
+            }
+            .p-5 img {
+                width:3%;
+                margin-left: 5px;
+            }
+           .n-o 4{
+                width: 33%;
+                font-size: 14px;
+                color: grey;
+            }
+            .n-i 4{
+                width: 7%;
+            }
+            .n-i 4 img {
+                width: 24%;
+                margin-top: 15px;
+            }
+             .lt-6 {
+                display: flex;
+                width: 100%;
+            }
+            .l-6 {
+                width: 6%;
+                display: inline-flex;
+            }
+            .l-6 img {
+                width: 39%;
+                height: 23px;
+                margin-left: 14px;
+                margin-top: 13px;
+            }
+            .p-6 {
+                width: 53%;
+            }
+            .p-6 p {
+                font-size: 14px;
+            }
+            .p-6 img {
+                width:3%;
+                margin-left: 5px;
+            }
+           .n-o 5{
+                width: 33%;
+                font-size: 14px;
+                color: grey;
+            }
+            .n-i 5{
+                width: 7%;
+            }
+            .n-i 5 img {
+                width: 24%;
+                margin-top: 15px;
+            }
+             .lt-7 {
+                display: flex;
+                width: 100%;
+            }
+            .l-7 {
+                width: 6%;
+                display: inline-flex;
+            }
+            .l-7 img {
+                width: 39%;
+                height: 23px;
+                margin-left: 14px;
+                margin-top: 13px;
+            }
+            .p-7 {
+                width: 53%;
+            }
+            .p-7 p {
+                font-size: 14px;
+            }
+            .p-7 img {
+                width:3%;
+                margin-left: 5px;
+            }
+           .n-o 6{
+                width: 33%;
+                font-size: 14px;
+                color: grey;
+            }
+            .n-i 6{
+                width: 7%;
+            }
+            .n-i 6 img {
+                width: 24%;
+                margin-top: 15px;
+            }
+            .m-d {
+               position: sticky;
+               top: 0px;
+               background-color: white;
+               height: 160px;
+               padding-top: 3px;
+            }
+          @media only screen and (max-width: 600px) {
+             /* For tablets: */
+                  .m-d {
+                       height: 280px;
+                      }
+             }
+           .v-hid {
+               display: none;
+            }
+             @media only screen and (max-width: 600px) {
+             /* For tablets: */
+               .v-hid {
+                          display: block;
+                    }  
+               .i-s-2 {
+                         width: 136%;
+                         margin-left: 23px;
+                    }
+          }
+           @media only screen and (max-width: 414px) {
+             /* For tablets: */
+              .i-s-2 {
+                         width: 143%;
+                         margin-left: 10px;
+                    }
+              
+          }
+            .bdr-2 {
+                width: 55.5%;
+               
+            }
+            .i-s-2 {
+                border: none;
+                background-color: #e9eef6;
+                border-radius:30px;
+                display:flex;
+                align-items:center;
+                padding: 20px;
+                height: 4px;
+                margin-top: 8px;
+            }
+            .i-s-2:active {
+                background-color:white;
+                border:none;
+                box-shadow: 0px 0px 2.5px 0.5px grey;
+            }
+            .i-s-2 input {
+                flex:1px;
+                height:40px;
+                background-color: #e9eef6;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                padding: 16px;
+                width: 20px;
+            }
+         @media only screen and (max-width: 378px) {
+             /* For tablets: */
+                .i-s-2 input {
+                             width: 20%;
+                          }
+                    }
+            .i-s-2 input:active {
+               background-color:white;
+            }
+            .i-s-2 img {
+                width: 5.5%;
+            }
+            .dis-none {
+               display: none;
+            }
+            .btn-4 button{
+               border: none;
+               background-color: #e9eef6;
+               padding: 12px;
+               width: 22%;
+              
+               border-radius: 30px;
+               font-size: 12px;
+            }
+            .btn-4 button:hover {
+               background-color: lightgrey;
+            } 
+
+             @media only screen and (max-width: 600px) {
+             /* For tablets: */
+               .dis-none {
+                          display: block;
+                          margin-top: 11px;
+                          width: 103%;
+                    } 
+               .btn-4 {
+                          margin-top: 11px;
+                          width: 92%;
+                          margin-left: 11px;
+                      }
+              } 
+          
+
+               .la-di {
+                       width: 1.5%;
+               }
+
+          @media only screen and (max-width: 600px) {
+             /* For tablets: */
+                 .la-di {
+                         width: 0%;
+                       }    
+              }
+       
+              .last-wid {
+                         width: 1.5%;
+              }
+           @media only screen and (max-width: 497px) {
+             /* For tablets: */
+                .last-wid {
+                           width: 2%;
+                         }
+                    }
+             
+               
+  
+   
+            .slide{
+              /*  position:fixed;
+                top:0px;  */
+                display: none;
+                margin-left: -83px; 
+            }
+      @media only screen and (max-width: 497px) {
+             /* For tablets: */
+                       .slide {
+                             display: block;
+                          }
+                }
+            .sidepanel  {
+                width: 0;
+                position: fixed;
+                overflow:scroll;
+                z-index: 1;
+                height: 346px;
+                top: 0px;
+                left: 0;
+                background-color: #f8fafd;
+                overflow-x: hidden;
+                transition: 0.4s;
+                padding-top: 60px;
+                box-shadow: 0px -61px 147px;
+                border-radius: 0px 5px 5px 0px;
+            }
+          
+            .sidepanel a {
+                padding: 8px 8px 4px 11px;
+                text-decoration: none;
+                font-size: 16px;
+                color: black;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidepanel a:hover {
+                background-color: #e1e3e1;
+            }
+            .sidepanel span {
+                margin-left: 11px;
+            }
+            .sidepanel img {
+                width: 17px;
+                margin-left: 13px;
+            }
+            .sidepanel .closebtn {
+                position: absolute;
+                top: 0;
+                right: -167px;
+                font-size: 25px;
+                margin-right:173px;
+            }
+            
+           
+            .openbtn {
+                font-size: 23px;
+                cursor: pointer;
+                background-color:#f8fafd;
+                color: black;
+                padding: 10px 15px;
+                border: none;
+                border-radius:8px;
+            }
+            .openbtn:hover {
+                background-color:lightgrey;
+            }
+            .sidebar {
+                width: 73px;
+                height: 100%;
+                padding: 16px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+                margin-top: -21px;
+                margin-left: -9px;
+            }
+
+            .menu-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+        
+
+            .sidebar-items {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 13px 2px;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .item:hover {
+                background-color: lightgrey;
+            }
+            .item img {
+                width: 22px;
+            }
+            .item span {
+                font-size: 11px;
+            }
+            .none-block {
+                display: block;
+                margin-left: 21px;
+                margin-top: -1px;
+            }
+          @media only screen and (max-width: 497px) {
+             /* For tablets: */
+                  .none-block {
+                               display: none;
+                            }
+                }
+     </style>
+ </head>
+ <body>
+       <div class="main">
+         <div class="nav-bar">
+            <div class="logo">
+              <img src="assets/img/google-drive.PNG" /><span class="pl-10">Drive</span>
+        </div>
+          <div class="vis-visible">
+           <div class="input-search">
+            <div class="bx-w">
+              <img src="assets/img/search.png" />
+             <input type="search" placeholder="Search in Drive">
+               <img src="assets/img/equalizer.PNG" style="width:5%;" />
+          </div>
+         </div>
+        </div>
+            <div class="end-bar">
+                <div class="icon-3">
+                <img src="assets/img/question.PNG" />
+                 <img src="assets/img/setting.PNG" />
+                <img src="assets/img/noun-dot.PNG" />
+               <img src="assets/img/goku.jpg"  style="border-radius: 50px; height: 29px;" />
+              </div>
+            </div> 
+      </div>  
+         <div class="as-w">
+            <div class="side-bar">
+             <aside>
+               <div class="btn">
+               <button><span style="font-size: 27px; margin-left: 0px;">+</span> <sup style="font-size: 14px; margin-left: 9px;"> New </sup></button>
+      
+             </div>  
+                <div class="sd-3">
+                  <ul>
+                <li class="br-20"> <a href="#"><img src="assets/img/ico.PNG" /><span>Home</span></a></li>
+                <li> <a href="MD-p.html"><img src="assets/img/gdrive.SVG" /><span>My Drive</span></a></li>
+              <li style="margin-bottom: 16px;">  <a href= "com.html" > <img src="assets/img/my drive.PNG" /> <span> Computers</span></a></li> 
+                 <li> <a href="#"> <img src="assets/img/group.PNG" /><span>Shared with me</span></a></li>
+                  <li> <a href="#"><img src="assets/img/history.PNG" /><span>Recent</span></a></li>
+                  <li  style="margin-bottom: 16px;"><a href="#"><img src="assets/img/star.PNG" /><span>Starred</span></a></li>
+                 <li><a href="#"><img src="assets/img/spam-alert.PNG" /><span>Spam</span></a></li>
+                 <li><a href="#"><img src="assets/img/bin.PNG" /><span>Bin</span></a></li>
+                 <li><a href="#"><img src="assets/img/cloud.PNG" /><span>Storage</span></a></li>
+                 <li><progress id="file" value="3" max="100"> 32% </progress></li>
+                 <li>467.8 MB of 15 GB used</li>
+                 <li><button>Get more storage</button></li>
+                 </ul>
+               </div>  
+           </aside>
+          </div>  
+              <div id="mySidepanel" class="sidepanel"  >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="assets/img/google-drive.PNG" style="width: 29px;" /><span style="margin-right: 70px; font-size: 23px;">Google Drive</span><img src="assets/img/cross.PNG" style="width: 28px;" /> </a>
+         <a href="#" style="margin-top: 21px;"><img src="assets/img/ico.PNG" /><span> Home</span></a>
+           <a href="#"><img src="assets/img/gdrive.SVG" /><span> My Drive</span></a>
+            <a href="#" style="margin-bottom: 20px;"><img src="assets/img/my drive.PNG" /><span> Computers</span></a>
+            
+             
+           <a href="#"> <img src="assets/img/group.PNG" /><span>Shared with me</span></a>
+        <a href="#"><img src="assets/img/history.PNG" /><span>Recent</span></a>
+      <a href="#" style="margin-bottom: 20px;"><img src="assets/img/star.PNG" /><span>Starred</span></a>
+   
+
+
+     
+    <a href="#"><img src="assets/img/spam-alert.PNG" /><span>Spam</span></a>
+    <a href="#"><img src="assets/img/bin.PNG" /><span>Bin</span></a>
+    <a href="#"><img src="assets/img/cloud.PNG" /><span>Storage</span></a>
+    
+    
+</div>
+         <div class="main">
+            <div class="slide">
+             <aside class="sidebar">
+           <div class="menu-btn">
+    
+            <button class="openbtn" onclick="openNav()">☰ </button>  
+         </div>
+
+      <div class="sidebar-items">
+       <div class="item">
+        
+        <span><img src="assets/img/ico.PNG" /></span>
+    </div>
+    <div class="item">
+       
+        <span><img src="assets/img/gdrive.SVG" /></span>
+    </div>
+    <div class="item">
+        
+        <span><img src="assets/img/my drive.PNG" /></span>
+    </div>
+    <div class="item">
+       
+        <span><img src="assets/img/history.PNG" /></span>
+    </div>
+</div>
+        <script>
+           function openNav() {
+           document.getElementById("mySidepanel").style.width = "338px";
+           }
+
+           function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+           }
+     </script>
+   </aside> 
+      </div>    
+            
+            <div class="w-76">
+                   <div class="m-d">
+                  <div class="p-f">
+                  
+                <p class="fs-24">Welcome to Drive <span style="float: right; margin-right: 14px;"><img src="assets/img/info-button.png" style="width: 20px; margin-top: 4px;" /></span></p>
+              <div class="v-hid">
+                <div class="bdr-2">
+                    <div class="i-s-2">
+                   <img src="assets/img/search.png" />
+             <input type="search" placeholder="Search in Drive">
+               <img src="assets/img/equalizer.PNG" style="width:5%;" />
+                   </div>
+                 </div>
+              </div>
+           <div class="dis-none">
+               <div class="btn-4">
+                   <button>Type</button>
+                   <button>People</button>
+                   <button>Modi...</button>
+                   <button>Loca...</button>
+              </div>
+            </div>
+           
+                 <div class="df-5">
+                 
+                  <div class="sw-20"><p>Suggested </p></div>
+                       <div class="btn-2">
+                         <button><img src="assets/img/tick 2.PNG" style="width:16%;" /><span style="margin-left: 8px;">Files</span></button> 
+                          <a href="n-page.html">  <button style="border-radius: 0px 31px 31px 0px; border: 1px solid grey; background-color: white;  margin-left: -5px;   padding-top: 5px;"><img src="assets/img/fold-2.PNG" style="width: 15px;" /><span style="margin-left: 9px;">Folders</span></button> </a>
+               </div>
+                   <div class="btn-w-30">
+                                  
+                                       <button style=" width: 54px; border: 1px solid grey; background-color: #c2e7fe; height: 31px; margin-top: 12px; border-radius: 31px 0px 0px 31px;"><img src="assets/img/tick 2.PNG" style="width: 29%" /><img src="assets/img/menu.PNG" style="width: 33%" /></button>
+                                        <button style="width: 54px; background-color: white; border: 1px solid grey; height: 31px; border-radius: 0px 31px 31px 0px; margin-left: -5px;"><img src="assets/img/app.SVG" style="width: 33%" /></button>
+                                     
+                  </div>
+                       <div class="last-wid">
+                           
+                       </div>
+                   </div>     
+       
+                     <div class="D-flex">
+                  <div class="w-57">
+                  <p>Name</p>
+                   </div>
+                      <div class="w-40">
+                    <p> Reason suggested</p>
+                 </div>
+              </div>
+
+                  <div class="b-1"></div>       
+
+                                        
+               
+      
+    
+                     </div>
+                   </div>
+                <div class="none-block">
+               <div class="DF-10">
+                 <div class="img-w">
+                   <img src="assets/img/file.PNG" />  
+                   
+                    </div>
+                  <div class="w-50">
+             <p>Sarmaya Urdu 12_0.pdf <img src="assets/img/group.PNG" /></p>
+              
+                   </div>
+                <div class="nw-30">
+                  <p>You opened <span><img src="assets/img/dot 2.PNG" style="width: 8px;" /></span> 5 May 2024</p>
+               
+               </div>
+                  <div class="n-img">
+                    <img src="assets/img/td.PNG" />
+                </div>
+              </div>
+                   <div class="b-2"></div>
+                <div class="lt-2">
+                   <div class="l-2">
+                     <img src="assets/img/file.PNG" />  
+               </div>
+                   <div class="p-2">
+                     <p>Sanggat Urdu Key to Urdu for 12th Class (Freebook... <img src="assets/img/group.PNG" /></p>
+               </div>
+                   <div class="n-o">
+                  <p>You opened <span><img src="assets/img/dot 2.PNG" style="width: 8px;" /></span> 5 May 2024</p>
+               
+               </div>
+                  <div class="n-i">
+                    <img src="assets/img/td.PNG" />
+                </div>
+            </div>
+         
+              <div class="b-3"></div>
+                   <div class="lt-3">
+                   <div class="l-3">
+                     <img src="assets/img/file.PNG" />  
+               </div>
+                   <div class="p-3">
+                     <p>2019-G12-Mathematics-EM_0.pdf <img src="assets/img/group.PNG" /></p>
+              </div>
+                  <div class="n-o 2">
+                  <p>You opened <span><img src="assets/img/dot 2.PNG" style="width: 8px;" /></span> 5 May 2024</p>
+               
+               </div>
+                  <div class="n-i 2">
+                    <img src="assets/img/td.PNG" />
+                </div>
+            </div>
+              <div class="b-4"></div>
+                   
+                        <div class="lt-4">
+                           <div class="l-4">
+                               <img src="assets/img/file.PNG" />  
+                          </div>
+                               <div class="p-4">
+                                 <p>2nd Year Math MCQs CH-2(taleemcity.com)_Freeze... <img src="assets/img/group.PNG" /></p>
+                            </div>
+                              <div class="n-o 3">
+                  <p>You opened <span><img src="assets/img/dot 2.PNG" style="width: 8px;" /></span> 5 May 2024</p>
+               
+               </div>
+                  <div class="n-i 3">
+                    <img src="assets/img/td.PNG" />
+                </div>
+                         </div>
+                      <div class="b-4"></div>
+                         <div class="lt-5">
+                           <div class="l-5">
+                               <img src="assets/img/file.PNG" />  
+                          </div>
+                               <div class="p-5">
+                                  <p>2nd Year English Essay by TALEEMCITY.COM.pdf <img src="assets/img/group.PNG" /></p>
+                            </div>
+                                 <div class="n-o 4">
+                  <p>You opened <span><img src="assets/img/dot 2.PNG" style="width: 8px;" /></span> 5 May 2024</p>
+               
+               </div>
+                  <div class="n-i 4">
+                    <img src="assets/img/td.PNG" />
+                </div>
+                         </div>
+                      <div class="b-4"></div>
+                     <div class="lt-6">
+                           <div class="l-6">
+                               <img src="assets/img/file.PNG" />  
+                          </div>
+                               <div class="p-6">
+                                  <p>2nd Year Pak Study Book(taleem360.com).pdf <img src="assets/img/group.PNG" /></p>
+                              </div>
+                                <div class="n-o 5">
+                  <p>You opened <span><img src="assets/img/dot 2.PNG" style="width: 8px;" /></span> 5 May 2024</p>
+               
+               </div>
+                  <div class="n-i 5">
+                    <img src="assets/img/td.PNG" />
+                </div>
+                         </div>
+                      <div class="b-4"></div>
+                 <div class="lt-7">
+                           <div class="l-7">
+                               <img src="assets/img/file.PNG" />  
+                          </div>
+                               <div class="p-7">
+                                  <p>2nd Year Pak Study Book(taleem360.com).pdf <img src="assets/img/group.PNG" /></p>
+                            </div>
+                               <div class="n-o 6">
+                  <p>You opened <span><img src="assets/img/dot 2.PNG" style="width: 8px;" /></span> 5 May 2024</p>
+               
+               </div>
+                  <div class="n-i 6">
+                    <img src="assets/img/td.PNG" />
+                </div>
+                         </div>
+                      <div class="b-4"></div>
+                                        
+                </div>
+                  </div>
+             
+          </div>     
+               <div class="la-di">
+        
+                 </div>                          
+            </div>
+ </body>
+</html>

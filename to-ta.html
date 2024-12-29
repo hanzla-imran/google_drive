@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<style>
+body {
+                margin:0px;
+                padding:0px; 
+                background-color:#f8fafd; 
+                overflow: hidden;
+            }
+            .main {
+                width: 100%; 
+                font-family: Roboto, Arial, sans-serif;  
+            }
+            .nav-bar {
+                width: 100%; 
+                display: inline-flex; 
+            }
+            .logo {
+                width: 24%;
+                display: flex;
+            }
+            .logo img {
+                padding-left: 26px;
+                padding-top: 12.5px;
+                height: 36px;
+            }
+            .pl-10 {
+                padding-left: 10px;
+                font-size: 22px;
+                margin-top: 20px;
+            }
+            .vis-visible {
+                visibility: visible;
+                width: 50%;
+            }
+       @media only screen and (max-width: 600px) {
+             /* For tablets: */
+               .vis-visible {
+                         visibility: hidden;
+                    }  
+          }
+            .input-search {
+                width: 100%; 
+            }
+        @media only screen and (max-width: 428px) {
+             /* For tablets: */
+            .vis-visible {
+                         width: 48%;
+                    }
+             }
+            .bx-w {
+                border: none;
+                background-color: #e9eef6;
+                border-radius:30px;
+                display:flex;
+                align-items:center;
+                padding: 20px;
+                height: 4px;
+                margin-top: 8px;
+            }
+            .bx-w:active {
+                background-color:white;
+                border:none;
+                box-shadow: 0px 0px 2.5px 0.5px grey;
+            }
+            .bx-w input {
+                flex:1px;
+                height:40px;
+                background-color: #e9eef6;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                padding: 16px;
+            }
+            .bx-w input:active {
+               background-color:white;
+            }
+            .bx-w img {
+                width: 3.5%;
+            }
+            .end-bar {
+                width: 20.5%;
+            }
+        
+            .icon-3 {
+                height: 54px;
+                display: flex;
+                align-items: center;
+                gap: 22px;
+                justify-content: right;
+                padding-top: 5px;
+            }
+            .icon-3 img {
+                height: 17px;
+            }
+ aside {
+  width: 200px;
+  height: 100vh;
+  background: #f8fafd;
+  position: fixed;
+
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.75)
+}
+
+aside ul {
+  padding-inline-start: 0;
+}
+
+aside ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+aside ul li .fas {
+  width: 50px;
+}
+
+.aside-wrapper {
+  padding: 0 14px;
+  box-sizing: border-box;
+}
+
+.logo-text {
+  font-size: 32px;
+  position: relative;
+  margin-left: 28px;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: -1px;
+  left: 214px;
+  background: #f8fafd;
+  padding: 4px 11px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+/* Toggler Functionality */
+input:checked ~ aside {
+  left: -250px;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+         <div class="nav-bar">
+            <div class="logo">
+              <img src="assets/img/google-drive.PNG" /><span class="pl-10">Drive</span>
+        </div>
+          <div class="vis-visible">
+           <div class="input-search">
+            <div class="bx-w">
+              <img src="assets/img/search.png" />
+             <input type="search" placeholder="Search in Drive">
+               <img src="assets/img/equalizer.PNG" style="width:5%;" />
+          </div>
+         </div>
+        </div>
+            <div class="end-bar">
+                <div class="icon-3">
+                <img src="assets/img/question.PNG" />
+                 <img src="assets/img/setting.PNG" />
+                <img src="assets/img/noun-dot.PNG" />
+               <img src="assets/img/"  style="border-radius: 50px; height: 29px;" />
+              </div>
+            </div> 
+      </div> 
+ <input type="checkbox" id="toggler" />
+<aside class="aside-wrapper">
+  <h1 class="logo-text"><span>G.Drive</span>
+    <label for="toggler"><i class="fas fa-bars sidebar-toggle"></i>
+      </label>
+        </h1>
+  
+  <ul>
+    <li> Home</li>
+    <li> My Drive</li>
+    <li> Computers</li>
+    <li> Legal</li>
+    <li> Recent</li>
+  </ul>
+
+  <ul>
+    <li> Get Help</li>
+    <li> Chat With Us</li>
+  </ul>
+</aside>
+</body>
+</html>

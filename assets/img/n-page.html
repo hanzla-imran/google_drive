@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <style>
+            body {
+                margin:0px;
+                padding:0px; 
+                background-color:#f8fafd; 
+                overflow: hidden;
+            }
+            .main {
+                width: 100%; 
+                font-family: Roboto, Arial, sans-serif;  
+            }
+            .nav-bar {
+                width: 100%; 
+                display: inline-flex; 
+            }
+            .logo {
+                width: 24%;
+                display: flex;
+            }
+            .logo img {
+                width: 14%;
+                padding-left: 26px;
+                padding-top: 12.5px;
+                height: 36px;
+            }
+            .pl-10 {
+                padding-left: 10px;
+                font-size: 22px;
+                margin-top: 20px;
+            }
+            .input-search {
+                width: 55.5%;
+               
+            }
+            .bx-w {
+                border: none;
+                background-color: #e9eef6;
+                border-radius:30px;
+                display:flex;
+                align-items:center;
+                padding: 20px;
+                height: 4px;
+                margin-top: 8px;
+            }
+            .bx-w:active {
+                background-color:white;
+                border:none;
+                box-shadow: 0px 0px 2.5px 0.5px grey;
+            }
+            .bx-w input {
+                flex:1px;
+                height:40px;
+                background-color: #e9eef6;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                padding: 16px;
+            }
+            .bx-w input:active {
+               background-color:white;
+            }
+            .bx-w img {
+                width: 3.5%;
+            }
+            .end-bar {
+                width: 20.5%;
+            }
+            .icon-3 {
+                height: 54px;
+                display: flex;
+                align-items: center;
+                gap: 22px;
+                padding-left: 42px;
+                padding-top: 5px;
+            }
+            .icon-3 img {
+                width: 11%;
+            }
+            .as-w {
+                width: 100%;
+                display: flex;
+            }
+            ::-webkit-scrollbar {
+                width: 8px;
+                height: 10px;
+            }
+
+
+            ::-webkit-scrollbar-track { 
+                border-radius: 10px;
+            }
+ 
+
+           ::-webkit-scrollbar-thumb {
+                background: #c7c7c7; 
+                border-radius: 10px;
+            }
+
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #7e817f; 
+            }
+            .side-bar {
+                width:24%;
+                height: 422px;
+                display: inline-grid;  
+            }
+            .btn {
+                height: 86px;
+                
+                width: 100%;
+            }
+            .btn button {
+                margin-left: 14px;
+                border: none;
+                background-color: white;
+                width: 42%;
+                margin-top: 12px;
+                height: 57px;
+                border-radius: 16px;
+                box-shadow: 1px 1px 2px 0px grey;
+            }
+            .sd-3 {
+                overflow: auto;
+                height: 340px;
+            }
+            .sd-3 ul{
+                margin: 0px;
+                padding: 0px;
+            }
+            .sd-3 li {
+                list-style-type:none;
+                margin-left: 16px;
+                padding: 6px;
+            }
+            .sd-3 li:hover {
+                background-color: #ebeee9;
+                border-radius: 20px;
+                width: 85%;
+            }
+            .br-20 {
+                border: none;
+                border-radius: 20px;
+                background-color: #c2e7fe;
+                width: 85%;
+            }
+            .sd-3 li a{
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+            }
+            .sd-3 li a img {
+                width:9%;
+            }
+            .sd-3 li progress {
+                height: 10px;
+                width: 90%;
+            }
+            .sd-3 li button {
+                height: 44px;
+                background-color: #f8fafd;
+                border: 1px solid black;
+                border-radius: 21px;
+                width: 73%;
+                color: #4a7cdc;
+                font-family: Roboto, Arial, sans-serif;
+                font-weight: 500;
+            }
+            .sd-3 span {
+                margin-left: 14px;
+                
+            }
+            .w-76 {
+                width: 74.5%;
+                background-color: white;
+                border-radius:18px;
+                margin-top: 3px;
+                box-shadow:1px 0px 1px -1px lightgrey;
+                height: 405px;
+                overflow: auto;
+            }
+            .p-f {
+                margin-left:18px;
+            }
+            .fs-24 {
+                font-size:24px;   
+            }
+            .df-5 {
+                width: 100%;
+                display: flex;
+            }
+            .sw-20 {
+                width: 20%;
+                display: inline-flex;
+            }
+            .btn-2 {
+                width: 50%;
+            }
+            .btn-2 button {
+                background-color: #c2e7fe;
+                border: 1px solid grey;
+                padding: 6px;
+                border-radius: 31px 0px 0px 31px;
+                width: 26%;
+                margin-top: 11px;
+            }
+            .btn-w-30 {
+               width: 30%;
+            }
+            .D-flex {
+                display: flex;
+                width: 100%;
+            }
+            .w-57 {
+                width:57%;
+                display: inline-flex;
+            }
+            .w-40 {
+                width:40%;
+            }
+            .line-1 {
+                border-bottom: 1px solid lightgrey;
+            }
+            .DF-10 {
+                display: flex;
+                width: 100%;
+            }
+            .img-w {
+                width: 6%;
+                display: inline-flex;
+            }
+            .img-w img {
+                width: 39%;
+                height: 23px;
+                margin-left: 14px;
+                margin-top: 13px;
+            }
+            .w-50 {
+                width: 50%;
+                 font-size: 14px;
+            }
+            .nw-30 {
+                width: 30%;
+                font-size: 14px;
+                color: grey;
+            }
+            .n-img {
+                width: 7%;
+            }
+            .n-img img {
+                width: 24%;
+                margin-top: 15px;
+            }
+            .b-2 {
+                border-bottom: 1px solid #d5d5d5;
+            }
+   </style>
+ </head>
+ <body>
+       <div class="main">
+         <div class="nav-bar">
+            <div class="logo">
+              <img src="google-drive.PNG" /><span class="pl-10">Drive</span>
+        </div>
+           <div class="input-search">
+            <div class="bx-w">
+              <img src="search.png" />
+             <input type="search" placeholder="Search in Drive">
+               <img src="equalizer.PNG" style="width:5%;" />
+          </div>
+         </div>
+            <div class="end-bar">
+                <div class="icon-3">
+                <img src="question.PNG" />
+                 <img src="setting.PNG" />
+                <img src="noun-dot.PNG" />
+               <img src="AS.JPG"  style="border-radius: 50px; width: 18%;" />
+              </div>
+            </div> 
+      </div> 
+         <div class="as-w">
+            <div class="side-bar">
+             <aside>
+            <div class="btn">
+               <button><span style="font-size: 32px; margin-left: -19px;">+</span>New</button>
+      
+             </div>
+                <div class="sd-3">
+                  <ul>
+                <li class="br-20"> <a href="#"><img src="ico.PNG" /><span>Home</span></a></li>
+                <li> <a href="#"><img src="gdrive.SVG" /><span>My Drive</span></a></li>
+               <li>  <a href= "#"><img src="my drive.PNG" /> <span> Computers</span></a> </li>
+                 <li> <a href="#"> <img src="group.PNG" /><span>Shared with me</span></a></li>
+                  <li> <a href="#"><img src="history.PNG" /><span>Recent</span></a></li>
+                  <li><a href="#"><img src="star.PNG" /><span>Starred</span></a></li>
+                 <li><a href="#"><img src="spam-alert.PNG" /><span>Spam</span></a></li>
+                 <li><a href="#"><img src="bin.PNG" /><span>Bin</span></a></li>
+                 <li><a href="#"><img src="cloud.PNG" /><span>Storage</span></a></li>
+                 <li><progress id="file" value="3" max="100"> 32% </progress></li>
+                 <li>467.8 MB of 15 GB used</li>
+                 <li><button>Get more storage</button></li>
+                 </ul>
+               </div>
+           </aside>
+          </div>
+          <div class="w-76">
+                  <div class="p-f">
+                <p class="fs-24">Welcome to Drive</p>
+               <div class="df-5">
+                 
+                  <div class="sw-20"><p>Suggested </p></div>
+                       <div class="btn-2">
+                         <a href="google drive.html"><button><img src="tick 2.PNG" style="width:18%;" /><span style="margin-left: 8px;">Files</span></button></a>
+                            <button style="border-radius: 0px 31px 31px 0px; border: 1px solid grey; background-color: white;  margin-left: -5px; height: 34px;  padding-top: 10px;">Folders</button> 
+               </div>
+                   <div class="btn-w-30"><button style="width: 23%; border: 1px solid grey; background-color: #c2e7fe; height: 31px; margin-left: 94px; margin-top: 12px; border-radius: 31px 0px 0px 31px;"><img src="tick 2.PNG" style="width: 23%" /><img src="menu.PNG" style="width: 23%" /></button>
+                                        <button style="width: 23%; background-color: white; border: 1px solid grey; height: 31px; border-radius: 0px 31px 31px 0px; margin-left: -5px;"><img src="app.SVG" style="width: 23%" /></button></div>
+                     </div>
+                    <div class="D-flex">
+                  <div class="w-57">
+                  <p>Name</p>
+                   </div>
+                      <div class="w-40">
+                    <p> Reason suggested</p>
+                 </div>
+                 
+              </div>
+               <div class="line-1"></div>
+              <div class="DF-10">
+                 <div class="img-w">
+                   <img src="folder.PNG" />  
+                   
+                    </div>
+                  <div class="w-50">
+             <p>LarkPlayer </p>
+              
+                   </div>
+                <div class="nw-30">
+                  <p>You created . 15 Nov 2023</p>
+               
+               </div>
+                  <div class="n-img">
+                    <img src="td.PNG" />
+                </div>
+              </div>
+                   <div class="b-2"></div>
+            </div>
+</body>
+</html>
